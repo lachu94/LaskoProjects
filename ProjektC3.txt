@@ -1,6 +1,8 @@
-1.Stworzenie bazy danych. 
-2.Stworzenie formatki do logowania.
-3.Stworzenie formatki do przydzielania zadania.
-4.Stworzenie formatki do wy�wietlania kto ma jakie zadania.
+1.Stworzenie bazy danych. Podzielić na dwa zadania diagramy i baza. 
+2.Stworzenie formatki do logowania.-zastanowić sie nad pluginami.
+3.Stworzenie formatki do przydzielania zadania.-pluginy
+4.Stworzenie formatki do wyświetlania kto ma jakie zadania.-pluginy
 5.Sworzenie webservice.
 6.Apka mobilna. 
+Testy jednostkowe
+podział na architekture i implementacje
