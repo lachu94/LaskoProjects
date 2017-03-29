@@ -1,0 +1,6 @@
+1.Stworzenie bazy danych. 
+2.Stworzenie formatki do logowania.
+3.Stworzenie formatki do przydzielania zadania.
+4.Stworzenie formatki do wyœwietlania kto ma jakie zadania.
+5.Sworzenie webservice.
+6.Apka mobilna. 
