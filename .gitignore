@@ -5,6 +5,7 @@
 *.elf
 Siema :)
 Console.Write("Siemanko");
+Elo cwelo
 # Precompiled Headers
 *.gch
 *.pch
