@@ -4,7 +4,7 @@
 *.obj
 *.elf
 Siema :)
-
+Console.Write("Siemanko");
 # Precompiled Headers
 *.gch
 *.pch
