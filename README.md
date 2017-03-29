@@ -5,3 +5,8 @@ Kierownik rozdziela poszczególne zadania pracownikom oraz na kiedy mają zosta�
 Pracownik po zalogowaniu na swoje konto widzi harmonogram przydzielonych mu zadań i przy jakim samochodzie.
 Po skończeniu danego zadania (np wymiana oleju i filtrów) może zaznaczyć, że to zadanie zostało już wykonane.
 Kierownik w każdej chwili ma podgląd co przy danym samochodzie zostało zrobione i jeśli wszystkie prace zostały zakończone może sporządzić wydruk dla klienta z wyceną usługi i listą wykonanych napraw.
+
+
+
+
+(Póki co tyle, modyfikujcie i rozszerzajcie wedle uznania)
