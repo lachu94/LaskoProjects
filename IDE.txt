@@ -1,7 +1,0 @@
-Visual Studio 2015/2017 C#
-Aplikacja warsztatu
-WebService
-Android Studio Java
-Aplikacja klienta
-Mircosoft Server Sql 2016
-Baza Danych
