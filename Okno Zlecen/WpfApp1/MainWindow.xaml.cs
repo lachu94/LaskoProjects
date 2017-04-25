@@ -26,72 +26,68 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            
-            
-            List<Klient> klient = GetRESTTowary("http://warsztat-001-site1.etempurl.com/api/klient");
-            int firstidK = klient.Min(k => k.id_Klienta);
-            int lastidK = klient.Max(k => k.id_Klienta);
-            List<Samochod> samochod = new List<Samochod>();
-            List<Usluga> usluga = new List<Usluga>();
-            List<Pracownik> pracownik = GetRESTPRacownik("http://warsztat-001-site1.etempurl.com/api/pracownik");
-            MessageBox.Show("dd " );
+
+
+            List<Klienci> klienci = GetRESTTowary("http://warsztat-001-site1.etempurl.com/api/klient");
+            int firstidK = klienci.Min(k => k.id_Klienta);
+            int lastidK = klienci.Max(k => k.id_Klienta);
+            List<Samochody> samochody = new List<Samochody>();
+            List<Uslugi> uslugi = new List<Uslugi>();
+            List<Pracownicy> pracownicy = GetRESTPRacownik("http://warsztat-001-site1.etempurl.com/api/pracownik");
+
             for (int i = firstidK; i <= lastidK; i++)
             {
-               samochod.AddRange(GetRESTSamochod("http://warsztat-001-site1.etempurl.com/api/samochod/" +i));
+                samochody.AddRange(GetRESTSamochod("http://warsztat-001-site1.etempurl.com/api/samochod/" + i));
             }
             for (int i = firstidK; i <= 10; i++)
             {
-                usluga.AddRange(GetRESTUsluga("http://warsztat-001-site1.etempurl.com/api/usluga/" + i));
+                uslugi.AddRange(GetRESTUsluga("http://warsztat-001-site1.etempurl.com/api/usluga/" + i));
             }
 
-    
+            var result =
+            from klient in klienci
+            join samochod in samochody on klient.id_Klienta equals samochod.id_Klienta
+            join usluga in uslugi on samochod.id_Samochodu equals usluga.id_Samochodu
+            into UslugiJoin
+            from usluga in UslugiJoin.DefaultIfEmpty()
 
-            var resutl=
-            from d in klient
-            join c in samochod on d.id_Klienta equals c.id_Klienta
-            join s in usluga on c.id_Samochodu equals s.id_Samochodu
-            //into a
-            //from j in a.DefaultIfEmpty()
-            join p in pracownik on s.id_Pracownika equals p.id_Pracownika
-            //into q
-            //from o in q.DefaultIfEmpty()
+                //join pracownicy in pracownik on new { Id_Pracownika = uslugi.id_Pracownika }
+                //      equals new { Id_Pracownika = pracownicy.id_Pracownika } into Pracownicy_join
+                //from pracownicy in Pracownicy_join.DefaultIfEmpty()
+                //from k in klient
+                //from s in samochod.Where(c => k.id_Klienta == c.id_Klienta)
+                //from u in usluga.Where(j => s.id_Samochodu == j.id_Samochodu).DefaultIfEmpty()
+                //from p in pracownik.Where(a => u.id_Pracownika == a.id_Pracownika).DefaultIfEmpty()
+                //from u1 in usluga
             select new
-              {
-             
-                 d.Imie,
-                 d.Nazwisko,
-                 d.Telefon,
-                 d.id_Klienta,
-                 c.Marka,
-                 c.Model,
-                 s.Status,
-                 p.nrTelefonu
-                // Status= j?.Status,
-                // nrTelefonu =o?.nrTelefonu
+            {
 
-
+                klient.Imie,
+                klient.Nazwisko,
+                klient.Telefon,
+                klient.id_Klienta,
+                samochod.Marka,
+                samochod.Model,
+                Status = usluga?.Status,
+                //  NazwiskoPracownika = pracownicy == null ? null: pracownicy.NazwiskoPracownika
             };
 
-            foreach (var s in resutl)
+            foreach (var s in result)
             {
-               lvUsers.ItemsSource = resutl;
-              
+                lvUsers.ItemsSource = result;
 
             }
-
-
-
         }
 
-        public class Klient
+        public class Klienci
         {
             public int id_Klienta { get; set; }
             public string Imie { get; set; }
             public string Nazwisko { get; set; }
             public int Telefon { get; set; }
-        
+
         }
-        public class Samochod
+        public class Samochody
         {
             public int id_Samochodu { get; set; }
             public string Marka { get; set; }
@@ -99,16 +95,17 @@ namespace WpfApp1
             public string Typ_silnika { get; set; }
             public int id_Klienta { get; set; }
         }
-        public class Pracownik
+        public class Pracownicy
         {
             public int id_Pracownika { get; set; }
             public string Imie { get; set; }
-            [JsonProperty ("Nazwisko")]
+            [JsonProperty("Nazwisko")]
             public string NazwiskoPracownika { get; set; }
             public string nrTelefonu { get; set; }
+
         }
 
-        public class Usluga
+        public class Uslugi
         {
             public int id_Uslugi { get; set; }
             public string Opis_Usterek { get; set; }
@@ -116,49 +113,45 @@ namespace WpfApp1
             public int id_Pracownika { get; set; }
             public string Status { get; set; }
         }
-     
 
-        private List<Klient> GetRESTTowary(string uri)
+
+        private List<Klienci> GetRESTTowary(string uri)
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(uri);
             var webResponse = (HttpWebResponse)webRequest.GetResponse();
             var reader = new StreamReader(webResponse.GetResponseStream());
             string s = reader.ReadToEnd();
-            return JsonConvert.DeserializeObject<List<Klient>>(s);
+            return JsonConvert.DeserializeObject<List<Klienci>>(s);
         }
-        private List<Samochod> GetRESTSamochod(string uri)
+        private List<Samochody> GetRESTSamochod(string uri)
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(uri);
             var webResponse = (HttpWebResponse)webRequest.GetResponse();
             var reader = new StreamReader(webResponse.GetResponseStream());
             string s = reader.ReadToEnd();
-            return JsonConvert.DeserializeObject<List<Samochod>>(s);
+            return JsonConvert.DeserializeObject<List<Samochody>>(s);
         }
-        private List<Pracownik> GetRESTPRacownik(string uri)
+        private List<Pracownicy> GetRESTPRacownik(string uri)
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(uri);
             var webResponse = (HttpWebResponse)webRequest.GetResponse();
             var reader = new StreamReader(webResponse.GetResponseStream());
             string s = reader.ReadToEnd();
-            return JsonConvert.DeserializeObject<List<Pracownik>>(s);
+            return JsonConvert.DeserializeObject<List<Pracownicy>>(s);
         }
-        private List<Usluga> GetRESTUsluga(string uri)
+        private List<Uslugi> GetRESTUsluga(string uri)
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(uri);
             var webResponse = (HttpWebResponse)webRequest.GetResponse();
             var reader = new StreamReader(webResponse.GetResponseStream());
             string s = reader.ReadToEnd();
-            return JsonConvert.DeserializeObject<List<Usluga>>(s);
+            return JsonConvert.DeserializeObject<List<Uslugi>>(s);
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
             {
                 MainMenu mm = new MainMenu();
                 mm.Show();
