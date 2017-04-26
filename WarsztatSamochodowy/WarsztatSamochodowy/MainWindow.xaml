@@ -1,0 +1,19 @@
+﻿<Window x:Class="WarsztatSamochodowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarsztatSamochodowy"
+        mc:Ignorable="d"
+        Title="Logowanie" Height="382.425" Width="578.406">
+    <Grid RenderTransformOrigin="0.23,0.636">
+        <Label x:Name="lblLogin" Content="Login" HorizontalAlignment="Left" Height="27" Margin="170,83,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="lblHaslo" Content="Hasło" HorizontalAlignment="Left" Margin="170,119,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="23" Margin="218,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Zaloguj" HorizontalAlignment="Left" Margin="234,158,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Label x:Name="lblLogowanie" Content="" HorizontalAlignment="Left" Margin="145,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.895,-8.534" Width="68"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="218,122,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <Label x:Name="label" Content="Witaj w warsztacie" HorizontalAlignment="Left" Height="39" Margin="218,32,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
