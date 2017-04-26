@@ -1,0 +1,63 @@
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.exe.config
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.exe
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.pdb
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.csprojResolveAssemblyReference.cache
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\MainWindow.g.cs
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\App.g.cs
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy_MarkupCompile.cache
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy_MarkupCompile.lref
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\MainWindow.baml
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.g.resources
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.Properties.Resources.resources
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.csproj.GenerateResource.Cache
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.exe
+c:\users\rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.pdb
+C:\Users\Rafał\Documents\Visual Studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\Json.dll
+C:\Users\Rafał\Documents\Visual Studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rafał\Documents\Visual Studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\Json.pdb
+C:\Users\Rafał\Documents\Visual Studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Dodaj.g.cs
+C:\Users\Rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Wyswietl.g.cs
+C:\Users\Rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Dodaj.baml
+C:\Users\Rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Wyswietl.baml
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.csprojResolveAssemblyReference.cache
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Dodaj.g.cs
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\MainWindow.g.cs
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Wyswietl.g.cs
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\App.g.cs
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy_MarkupCompile.cache
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy_MarkupCompile.lref
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.pdb
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.exe.config
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.exe
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.pdb
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\Newtonsoft.Json.dll
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\Newtonsoft.Json.xml
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Dodaj.baml
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\MainWindow.baml
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Wyswietl.baml
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.g.resources
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.Properties.Resources.resources
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.csproj.GenerateResource.Cache
+E:\Studia\GitHub\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.exe
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.exe.config
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.exe
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.pdb
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\Newtonsoft.Json.dll
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\Newtonsoft.Json.xml
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\MainMenu.g.cs
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\MainWindow.g.cs
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\App.g.cs
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy_MarkupCompile.cache
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy_MarkupCompile.lref
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\MainMenu.baml
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\MainWindow.baml
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.g.resources
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.Properties.Resources.resources
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.csproj.GenerateResource.Cache
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.exe
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.pdb
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Zlecenia.g.cs
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Zlecenia.baml
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Formularz.g.cs
+E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Formularz.baml
