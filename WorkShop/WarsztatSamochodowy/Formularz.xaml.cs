@@ -104,5 +104,14 @@ namespace WarsztatSamochodowy
             sw.Close();
             var webResponse = (HttpWebResponse)webRequest.GetResponse();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenu mm = new MainMenu();
+            
+           
+            mm.Show();
+            this.Close();
+        }
     }
 }

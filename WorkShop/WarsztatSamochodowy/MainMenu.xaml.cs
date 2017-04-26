@@ -28,12 +28,7 @@ namespace WarsztatSamochodowy
             zl.Show();
             Close();
         }
-        private void btnFormularz_Click(object sender, RoutedEventArgs e)
-        {
-            Formularz fm = new Formularz();
-            fm.Show();
-            Close();
-        }
+     
 
         private void btnWyloguj_Click(object sender, RoutedEventArgs e)
         {
@@ -44,6 +39,13 @@ namespace WarsztatSamochodowy
             Application.Current.Shutdown();
             Close();
             
+        }
+
+        private void btnFormularz_Click_1(object sender, RoutedEventArgs e)
+        {
+            Formularz fm = new Formularz();
+            fm.Show();
+            Close();
         }
     }
 }

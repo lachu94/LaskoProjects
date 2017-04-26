@@ -26,7 +26,7 @@
         <Label Content="Opis usterek lub zadań do wykonania:" HorizontalAlignment="Left" Margin="54,386,0,0" VerticalAlignment="Top" FontSize="22"/>
         <TextBox x:Name="txtOpisUsterki" HorizontalAlignment="Left" Height="138" Margin="65,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="590"/>
         <Button x:Name="btnZatwierdz" Content="Zatwierdź" HorizontalAlignment="Left" Height="40" Margin="65,628,0,0" VerticalAlignment="Top" Width="183" Click="btnZatwierdz_Click"/>
-        <Button Content="Wyjdź" HorizontalAlignment="Left" Height="40" Margin="472,628,0,0" VerticalAlignment="Top" Width="183"/>
+        <Button Content="Wyjdź" HorizontalAlignment="Left" Height="40" Margin="472,628,0,0" VerticalAlignment="Top" Width="183" Click="Button_Click"/>
         <ComboBox x:Name="cboxTypSilnika" HorizontalAlignment="Left" Margin="203,300,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem>Diesel</ComboBoxItem>
             <ComboBoxItem>Benzyna</ComboBoxItem>
