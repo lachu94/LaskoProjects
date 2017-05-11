@@ -20,12 +20,12 @@ namespace WarsztatWS.Models
         public int id_Samochodu { get; set; }
         public int id_Pracownika { get; set; }
         public string Status { get; set; }
-
+        public string Podsumowanie { get; set; }
+        public Nullable<decimal> Cena { get; set; }
         [JsonIgnore]
-        public Pracownicy Pracownicy { get; set; }
+
+        public  Pracownicy Pracownicy { get; set; }
         [JsonIgnore]
         public  Samochody Samochody { get; set; }
-        [JsonIgnore]
-        public  Wydruk Wydruk { get; set; }
     }
 }

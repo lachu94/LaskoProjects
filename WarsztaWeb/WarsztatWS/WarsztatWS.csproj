@@ -120,15 +120,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Models\Warsztat.Context.tt">
+    <Content Include="Models\WorkShop.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Warsztat.edmx</DependentUpon>
-      <LastGenOutput>Warsztat.Context.cs</LastGenOutput>
+      <DependentUpon>WorkShop.edmx</DependentUpon>
+      <LastGenOutput>WorkShop.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Warsztat.tt">
+    <Content Include="Models\WorkShop.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Warsztat.edmx</DependentUpon>
-      <LastGenOutput>Warsztat.cs</LastGenOutput>
+      <DependentUpon>WorkShop.edmx</DependentUpon>
+      <LastGenOutput>WorkShop.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -139,45 +139,41 @@
     <Compile Include="Controllers\SamochodController.cs" />
     <Compile Include="Controllers\UslugaController.cs" />
     <Compile Include="Controllers\UzytkownikController.cs" />
-    <Compile Include="Controllers\WydrukController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Klienci.cs">
-      <DependentUpon>Warsztat.tt</DependentUpon>
+      <DependentUpon>WorkShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Pracownicy.cs">
-      <DependentUpon>Warsztat.tt</DependentUpon>
+      <DependentUpon>WorkShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Samochody.cs">
-      <DependentUpon>Warsztat.tt</DependentUpon>
+      <DependentUpon>WorkShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>Warsztat.tt</DependentUpon>
+      <DependentUpon>WorkShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Uslugi.cs">
-      <DependentUpon>Warsztat.tt</DependentUpon>
+      <DependentUpon>WorkShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Uzytkownicy.cs">
-      <DependentUpon>Warsztat.tt</DependentUpon>
+      <DependentUpon>WorkShop.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Warsztat.Context.cs">
+    <Compile Include="Models\WorkShop.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Warsztat.Context.tt</DependentUpon>
+      <DependentUpon>WorkShop.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Warsztat.cs">
+    <Compile Include="Models\WorkShop.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Warsztat.tt</DependentUpon>
+      <DependentUpon>WorkShop.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Warsztat.Designer.cs">
+    <Compile Include="Models\WorkShop.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Warsztat.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Wydruk.cs">
-      <DependentUpon>Warsztat.tt</DependentUpon>
+      <DependentUpon>WorkShop.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -186,12 +182,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\Warsztat.edmx">
+    <EntityDeploy Include="Models\WorkShop.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Warsztat.Designer.cs</LastGenOutput>
+      <LastGenOutput>WorkShop.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Warsztat.edmx.diagram">
-      <DependentUpon>Warsztat.edmx</DependentUpon>
+    <Content Include="Models\WorkShop.edmx.diagram">
+      <DependentUpon>WorkShop.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\Default Settings %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %283%29.pubxml" />

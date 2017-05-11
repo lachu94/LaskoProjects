@@ -15,12 +15,19 @@ namespace WarsztatWS.Models
 
     public partial class Uzytkownicy
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Uzytkownicy()
+        {
+            this.Pracownicy = new HashSet<Pracownicy>();
+        }
+    
         public int id_Uzytkownika { get; set; }
         public string Login { get; set; }
         public string Haslo { get; set; }
         public string Typ { get; set; }
-
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         [JsonIgnore]
-        public  Pracownicy Pracownicy { get; set; }
+        public ICollection<Pracownicy> Pracownicy { get; set; }
     }
 }
