@@ -13,10 +13,10 @@ namespace WarsztatWS.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DB_A1E22F_warsztatEntities1 : DbContext
+    public partial class WorkShop : DbContext
     {
-        public DB_A1E22F_warsztatEntities1()
-            : base("name=DB_A1E22F_warsztatEntities1")
+        public WorkShop()
+            : base("name=WorkShop")
         {
         }
     
@@ -31,6 +31,5 @@ namespace WarsztatWS.Models
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Uslugi> Uslugi { get; set; }
         public virtual DbSet<Uzytkownicy> Uzytkownicy { get; set; }
-        public virtual DbSet<Wydruk> Wydruk { get; set; }
     }
 }

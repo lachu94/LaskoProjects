@@ -14,7 +14,7 @@ namespace WarsztatWS.Controllers
 {
     public class KlientController : ApiController
     {
-        private DB_A1E22F_warsztatEntities1 db = new DB_A1E22F_warsztatEntities1();
+        private WorkShop db = new WorkShop();
 
         // GET: api/Klient
         public IQueryable<Klienci> GetKlienci()

@@ -14,26 +14,26 @@ namespace WarsztatWS.Controllers
 {
     public class PracownikController : ApiController
     {
-        private DB_A1E22F_warsztatEntities1 db = new DB_A1E22F_warsztatEntities1();
+        private WorkShop db = new WorkShop();
 
         // GET: api/Pracownik
-        public IQueryable<Pracownicy> GetPracownicy()
+        public IQueryable<Pracownicy> GetPracownicy()//int id)
         {
-            return db.Pracownicy;
+            return db.Pracownicy;//.Where(p=>p.id_Uzytkownika==id);
         }
 
         // GET: api/Pracownik/5
-        [ResponseType(typeof(Pracownicy))]
-        public IHttpActionResult GetPracownicy(int id)
-        {
-            Pracownicy pracownicy = db.Pracownicy.Find(id);
-            if (pracownicy == null)
-            {
-                return NotFound();
-            }
+        //[ResponseType(typeof(Pracownicy))]
+        //public IHttpActionResult GetPracownicy(int id)
+        //{
+        //    Pracownicy pracownicy = db.Pracownicy.Find(id);
+        //    if (pracownicy == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return Ok(pracownicy);
-        }
+        //    return Ok(pracownicy);
+        //}
 
         // PUT: api/Pracownik/5
         [ResponseType(typeof(void))]

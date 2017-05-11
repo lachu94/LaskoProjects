@@ -14,15 +14,12 @@ namespace WarsztatWS.Controllers
 {
     public class UslugaController : ApiController
     {
-        private DB_A1E22F_warsztatEntities1 db = new DB_A1E22F_warsztatEntities1();
+        private WorkShop db = new WorkShop();
 
         // GET: api/Usluga
-        public IQueryable<Uslugi> GetUslugi(int id )
+        public IQueryable<Uslugi> GetUslugi(int id)
         {
-            var usluga = from usl in db.Uslugi
-                            where usl.id_Uslugi == id
-                            select usl;
-            return usluga;
+            return db.Uslugi.Where(u=>u.id_Pracownika==id || u.id_Samochodu==id);
         }
 
         // GET: api/Usluga/5

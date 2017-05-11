@@ -24,10 +24,11 @@ namespace WarsztatWS.Models
         public int id_Pracownika { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
+        public Nullable<int> id_Uzytkownika { get; set; }
         public string nrTelefonu { get; set; }
 
         [JsonIgnore]
-        public  Uzytkownicy Uzytkownicy { get; set; }
+        public Uzytkownicy Uzytkownicy { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         [JsonIgnore]
         public  ICollection<Uslugi> Uslugi { get; set; }

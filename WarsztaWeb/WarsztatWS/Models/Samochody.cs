@@ -27,6 +27,7 @@ namespace WarsztatWS.Models
         public string Typ_silnika { get; set; }
         public int id_Klienta { get; set; }
         [JsonIgnore]
+
         public  Klienci Klienci { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         [JsonIgnore]
