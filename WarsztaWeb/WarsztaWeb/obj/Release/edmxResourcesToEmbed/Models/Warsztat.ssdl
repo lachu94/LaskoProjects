@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WarsztatModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Klienci">
+    <Key>
+      <PropertyRef Name="id_Klienta" />
+    </Key>
+    <Property Name="id_Klienta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Imie" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nazwisko" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="9" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pracownicy">
+    <Key>
+      <PropertyRef Name="id_Pracownika" />
+    </Key>
+    <Property Name="id_Pracownika" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Imie" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nazwisko" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="nrTelefonu" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Samochody">
+    <Key>
+      <PropertyRef Name="id_Samochodu" />
+    </Key>
+    <Property Name="id_Samochodu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Marka" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Typ_silnika" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="id_Klienta" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Uslugi">
+    <Key>
+      <PropertyRef Name="id_Uslugi" />
+    </Key>
+    <Property Name="id_Uslugi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Opis_Usterek" Type="text" Nullable="false" />
+    <Property Name="id_Samochodu" Type="int" Nullable="false" />
+    <Property Name="id_Pracownika" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Uzytkownicy">
+    <Key>
+      <PropertyRef Name="id_Uzytkownika" />
+    </Key>
+    <Property Name="id_Uzytkownika" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Haslo" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Typ" Type="nvarchar" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Wydruk">
+    <Key>
+      <PropertyRef Name="id_Wydruku" />
+    </Key>
+    <Property Name="id_Wydruku" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Opis" Type="text" Nullable="false" />
+    <Property Name="Cena_uslugi" Type="float" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Pracownicy_Uzytkownicy">
+    <End Role="Uzytkownicy" Type="Self.Uzytkownicy" Multiplicity="1" />
+    <End Role="Pracownicy" Type="Self.Pracownicy" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="id_Uzytkownika" />
+      </Principal>
+      <Dependent Role="Pracownicy">
+        <PropertyRef Name="id_Pracownika" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Samochody_Klienci">
+    <End Role="Klienci" Type="Self.Klienci" Multiplicity="1" />
+    <End Role="Samochody" Type="Self.Samochody" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klienci">
+        <PropertyRef Name="id_Klienta" />
+      </Principal>
+      <Dependent Role="Samochody">
+        <PropertyRef Name="id_Klienta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uslugi_Pracownicy">
+    <End Role="Pracownicy" Type="Self.Pracownicy" Multiplicity="1" />
+    <End Role="Uslugi" Type="Self.Uslugi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pracownicy">
+        <PropertyRef Name="id_Pracownika" />
+      </Principal>
+      <Dependent Role="Uslugi">
+        <PropertyRef Name="id_Pracownika" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uslugi_Samochody">
+    <End Role="Samochody" Type="Self.Samochody" Multiplicity="1" />
+    <End Role="Uslugi" Type="Self.Uslugi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Samochody">
+        <PropertyRef Name="id_Samochodu" />
+      </Principal>
+      <Dependent Role="Uslugi">
+        <PropertyRef Name="id_Samochodu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Wydruk_Uslugi1">
+    <End Role="Uslugi" Type="Self.Uslugi" Multiplicity="1" />
+    <End Role="Wydruk" Type="Self.Wydruk" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Uslugi">
+        <PropertyRef Name="id_Uslugi" />
+      </Principal>
+      <Dependent Role="Wydruk">
+        <PropertyRef Name="id_Wydruku" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WarsztatModelStoreContainer">
+    <EntitySet Name="Klienci" EntityType="Self.Klienci" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pracownicy" EntityType="Self.Pracownicy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Samochody" EntityType="Self.Samochody" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uslugi" EntityType="Self.Uslugi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uzytkownicy" EntityType="Self.Uzytkownicy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wydruk" EntityType="Self.Wydruk" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Pracownicy_Uzytkownicy" Association="Self.FK_Pracownicy_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Pracownicy" EntitySet="Pracownicy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Samochody_Klienci" Association="Self.FK_Samochody_Klienci">
+      <End Role="Klienci" EntitySet="Klienci" />
+      <End Role="Samochody" EntitySet="Samochody" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uslugi_Pracownicy" Association="Self.FK_Uslugi_Pracownicy">
+      <End Role="Pracownicy" EntitySet="Pracownicy" />
+      <End Role="Uslugi" EntitySet="Uslugi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uslugi_Samochody" Association="Self.FK_Uslugi_Samochody">
+      <End Role="Samochody" EntitySet="Samochody" />
+      <End Role="Uslugi" EntitySet="Uslugi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Wydruk_Uslugi1" Association="Self.FK_Wydruk_Uslugi1">
+      <End Role="Uslugi" EntitySet="Uslugi" />
+      <End Role="Wydruk" EntitySet="Wydruk" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="WarsztatEntities-Web.config Connection String" description="WarsztatEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Warsztat.csdl|res://*/Models.Warsztat.ssdl|res://*/Models.Warsztat.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=GORSKI;initial catalog=Warsztat;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Rafał\\documents\\visual\ studio\ 2015\\Projects\\WarsztaWeb\\WarsztaWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WarsztatEntities']/@connectionString" />
+  </parameter>
+</parameters>
