@@ -1,0 +1,7 @@
+Szef po zalogowaniu sie na swoje konto i wejœciu w opcje "Zobacz zlecenia"
+na listview wyœwietli siê lista zleceñ zawieraj¹ca dane:
+-Id ,Imie , Nazwisko,Telefon, Model, Marka samochodu klienta
+-Bêdzie wyœwietlane jaki pracownik wykonuje to zlecenie i jaki jest status
+Dane s¹ pobierane z bazy danych za pomoc¹ web service
+Jest mo¿liwoœæ zmienienia pracownika wykonywuj¹cego zlecenie oraz statusu
+Po wszystkich zmianach nale¿y nacisn¹æ przycisk zatwierdz, wtedy dane w bazie zostan¹ zedytowane
