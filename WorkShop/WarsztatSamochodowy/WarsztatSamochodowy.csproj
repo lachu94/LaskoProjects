@@ -62,16 +62,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Class\Pracownik.cs" />
     <Compile Include="Formularz.xaml.cs">
       <DependentUpon>Formularz.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klienci.cs" />
+    <Compile Include="Class\Klienci.cs" />
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Samochody.cs" />
-    <Compile Include="Uslugi.cs" />
-    <Compile Include="Uzytkownik.cs" />
+    <Compile Include="Class\Samochody.cs" />
+    <Compile Include="Class\Uslugi.cs" />
+    <Compile Include="Class\Uzytkownik.cs" />
     <Compile Include="Zlecenia.xaml.cs">
       <DependentUpon>Zlecenia.xaml</DependentUpon>
     </Compile>

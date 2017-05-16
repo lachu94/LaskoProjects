@@ -83,3 +83,4 @@ E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WorkShop\WarsztatSamochodowy
 E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WorkShop\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.csproj.GenerateResource.Cache
 E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WorkShop\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.exe
 E:\Studia\SpecjalizacjeStudia\C#KotSemestr6\Projekt\WorkShop\WarsztatSamochodowy\obj\Debug\WarsztatSamochodowy.pdb
+C:\Users\Rafał\Documents\WorkshopProject\WorkShop\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.exe.config

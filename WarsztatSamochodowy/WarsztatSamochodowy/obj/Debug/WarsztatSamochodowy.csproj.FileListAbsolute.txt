@@ -20,3 +20,4 @@ C:\Users\Rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\Warszt
 C:\Users\Rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Wyswietl.g.cs
 C:\Users\Rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Dodaj.baml
 C:\Users\Rafał\documents\visual studio 2015\Projects\WarsztatSamochodowy\WarsztatSamochodowy\obj\Debug\Wyswietl.baml
+C:\Users\Rafał\Documents\WorkshopProject\WarsztatSamochodowy\WarsztatSamochodowy\bin\Debug\WarsztatSamochodowy.exe.config
