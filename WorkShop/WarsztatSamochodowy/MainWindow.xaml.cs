@@ -19,7 +19,7 @@ namespace WarsztatSamochodowy
         public static string pUprawnienia = "";
 
         public static bool l;
-        private List<Uzytkownik>   GetRESTUzytkownik(string uri)
+        public List<Uzytkownik> GetRESTUzytkownik(string uri)
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(uri);
             var webResponse = (HttpWebResponse)webRequest.GetResponse();
@@ -48,7 +48,7 @@ namespace WarsztatSamochodowy
         private void button_Click(object sender, RoutedEventArgs e)
         {
             List<Uzytkownik> uzytkownik = GetRESTUzytkownik("http://warsztat-001-site1.etempurl.com/api/uzytkownik");
-                  string typ = "";
+            string typ = "";
             int id = 0;
             int length = uzytkownik.Count;
            
