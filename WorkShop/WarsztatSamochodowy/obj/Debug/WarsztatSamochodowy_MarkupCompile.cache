@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 E:\Studia\GitHub\WorkShop\WarsztatSamochodowy\obj\Debug\
+=======
+C:\Users\Rafał\Documents\WarsztatSamochodowy\WorkShop\WarsztatSamochodowy\obj\Debug\
+>>>>>>> 117cdc638f9dfc32178b16e3a74d598f5df61337
 WarsztatSamochodowy
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 E:\Studia\GitHub\WorkShop\WarsztatSamochodowy\App.xaml
 4-306473139
 
 12497592999
 15-981356250
+=======
+C:\Users\Rafał\Documents\WarsztatSamochodowy\WorkShop\WarsztatSamochodowy\App.xaml
+4-306473139
+
+12497592999
+17-1537085125
+>>>>>>> 117cdc638f9dfc32178b16e3a74d598f5df61337
 Formularz.xaml;MainMenu.xaml;MainWindow.xaml;Zlecenia.xaml;
 
 False
