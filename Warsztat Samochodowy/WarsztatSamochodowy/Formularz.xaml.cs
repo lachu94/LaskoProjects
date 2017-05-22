@@ -72,6 +72,7 @@ namespace WarsztatSamochodowy
                     if (telefon.Length > 0)
                     {
                         PostRESTKlienci("http://warsztat-001-site1.etempurl.com/api/klient", new Klienci() { Imie = imie, Nazwisko = nazwisko, Telefon = telefon });
+                     //   PostRESTKlienci("http://localhost:21030/api/klient", new Klienci() { Imie = imie, Nazwisko = nazwisko, Telefon = telefon });
                     }
                 }
             }
