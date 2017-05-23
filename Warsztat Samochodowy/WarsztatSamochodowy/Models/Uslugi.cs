@@ -2,10 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace WarsztatSamochodowy.Models
 {
@@ -17,8 +15,7 @@ namespace WarsztatSamochodowy.Models
         public int id_Pracownika { get; set; }
         public string Status { get; set; }
         public string Podsumowanie { get; set; }
-        public decimal Cena { get; set; }
-
+        public double Cena { get; set; }
 
         override public string ToString()
         {
@@ -32,7 +29,7 @@ namespace WarsztatSamochodowy.Models
             string s = reader.ReadToEnd();
             return JsonConvert.DeserializeObject<List<Uslugi>>(s);
         }
-        public void PostRESTUslugi(string uri, Uslugi u)
+        public int PostRESTUslugi(string uri, Uslugi u)
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(uri);
             webRequest.ContentType = "application/json";
@@ -42,6 +39,15 @@ namespace WarsztatSamochodowy.Models
             sw.Write(json);
             sw.Close();
             var webResponse = (HttpWebResponse)webRequest.GetResponse();
+            using (var streamReader = new StreamReader(webResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                string resultstring = result.ToString();
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                Uslugi us = js.Deserialize(resultstring, typeof(Uslugi)) as Uslugi;
+                int idu = us.id_Uslugi;
+                return idu;
+            }
         }
     }
 }
