@@ -2,10 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace WarsztatSamochodowy.Models
 {
@@ -28,7 +26,7 @@ namespace WarsztatSamochodowy.Models
             string s = reader.ReadToEnd();
             return JsonConvert.DeserializeObject<List<Samochody>>(s);
         }
-        public void PostRESTSamochody(string uri, Samochody s)
+        public int PostRESTSamochody(string uri, Samochody s)
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(uri);
             webRequest.ContentType = "application/json";
@@ -38,6 +36,16 @@ namespace WarsztatSamochodowy.Models
             sw.Write(json);
             sw.Close();
             var webResponse = (HttpWebResponse)webRequest.GetResponse();
+            using (var streamReader = new StreamReader(webResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                string resultstring = result.ToString();
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                Samochody sm = js.Deserialize(resultstring, typeof(Samochody)) as Samochody;
+                int ids = sm.id_Samochodu;
+                return ids;
+
+            }
         }
     }
 }

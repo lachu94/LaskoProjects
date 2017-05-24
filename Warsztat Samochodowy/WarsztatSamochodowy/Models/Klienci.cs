@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace WarsztatSamochodowy.Models
 {
@@ -28,7 +29,7 @@ namespace WarsztatSamochodowy.Models
             string s = reader.ReadToEnd();
             return JsonConvert.DeserializeObject<List<Klienci>>(s);
         }
-        public void PostRESTKlienci(string uri, Klienci k)
+        public int PostRESTKlienci(string uri, Klienci k)
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(uri);
             webRequest.ContentType = "application/json";
@@ -37,8 +38,20 @@ namespace WarsztatSamochodowy.Models
             string json = JsonConvert.SerializeObject(k);
             sw.Write(json);
             sw.Close();
-            var webResponse = (HttpWebResponse)webRequest.GetResponse();
-        }
 
+            var webResponse = (HttpWebResponse)webRequest.GetResponse();
+
+            using (var streamReader = new StreamReader(webResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                string resultstring = result.ToString();
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                Klienci ks = js.Deserialize(resultstring, typeof(Klienci)) as Klienci;
+                int idk = ks.id_Klienta;
+                return idk;
+
+            }
+
+        }
     }
 }

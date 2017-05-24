@@ -23,6 +23,7 @@ namespace WarsztatSamochodowy
                 List<Klienci> klienci = klient.GetRESTKlient("http://warsztat-001-site1.etempurl.com/api/klient");
                 int firstidK = klienci.Min(k => k.id_Klienta);
                 int lastidK = klienci.Max(k => k.id_Klienta);
+
                 List<Samochody> samochody = new List<Samochody>();
                 List<Uslugi> uslugi = new List<Uslugi>();
                 List<Pracownicy> pracownicy = pracownik.GetRESTPRacownik("http://warsztat-001-site1.etempurl.com/api/pracownik");
@@ -31,9 +32,11 @@ namespace WarsztatSamochodowy
                 {
                     samochody.AddRange(samochod.GetRESTSamochod("http://warsztat-001-site1.etempurl.com/api/samochod/" + i));
                 }
+            int fistidS = samochody.Min(s => s.id_Samochodu);
+            int lastidS = samochody.Max(s => s.id_Samochodu);
             try
             {
-                for (int i = firstidK; i <= 10; i++)
+                for (int i = fistidS; i <= lastidS; i++)
                 {
                     uslugi.AddRange(usluga.GetRESTUsluga("http://warsztat-001-site1.etempurl.com/api/usluga/" + i));
                 }
