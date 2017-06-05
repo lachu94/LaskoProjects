@@ -1,0 +1,117 @@
+﻿<Window x:Class="WarsztatSamochodowy.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarsztatSamochodowy"
+        mc:Ignorable="d"
+        Title="MainMenu"  WindowState="Maximized" WindowStyle="None">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <Button x:Name="btnFormularz"  HorizontalAlignment="Center"  VerticalAlignment="Center" Width="419" Click="btnFormularz_Click_1" Margin="174,115,167,330" Height="82">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.683"/>
+                    <GradientStop Color="#FF060002" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Obrazy/formularz.png" Width="60" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="60"/>
+                <Label Content="Dodaj Zlecenie" Width="175" HorizontalAlignment="Right" FontSize="20" FontFamily="Showcard Gothic" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnZlecenia" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="419" Click="btnZlecenia_Click" Margin="174,202,167,243" Height="82">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.683"/>
+                    <GradientStop Color="#FF060002" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Obrazy/car_repair_256.png" Width="60" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="60"  />
+                <Label Content="Zobacz Zlecenia " Width="195" HorizontalAlignment="Right" FontSize="20" FontFamily="Showcard Gothic" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnWyloguj"  HorizontalAlignment="Center"  VerticalAlignment="Center" Width="419" Click="btnWyloguj_Click" Margin="174,423,167,22" Height="82">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.683"/>
+                    <GradientStop Color="#FF060002" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Obrazy/logout.png" Width="60" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="60"/>
+                <Label Content=" Wyloguj" Width="147" HorizontalAlignment="Right" FontSize="20" FontFamily="Showcard Gothic" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnWyjscie" HorizontalAlignment="Right"  VerticalAlignment="Top" Width="77" Height="77" Click="btnWyjscie_Click">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="Obrazy/close.png"/>
+            </Button.OpacityMask>
+            <StackPanel>
+                <Image Source="Obrazy/close.png">
+                    <Image.Effect>
+                        <DropShadowEffect/>
+                    </Image.Effect>
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="Obrazy/close.png"/>
+                    </Image.OpacityMask>
+                </Image>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnDodajP" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="419"  Click="btnDodajP_Click" Margin="174,289,167,156" Height="82">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.683"/>
+                    <GradientStop Color="#FF060002" Offset="1"/>
+                </LinearGradientBrush>
+
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Obrazy/plusik.png" Width="60" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="60"  />
+                <Label Content="Dodaj pracownika" Width="213" HorizontalAlignment="Right" FontSize="20" FontFamily="Showcard Gothic" VerticalAlignment="Center"/>
+            </StackPanel>
+
+        </Button>
+        <Button x:Name="btnMinimalizuj" HorizontalAlignment="Right"  VerticalAlignment="Top" Width="77" Height="77" Margin="0,0,77,0" Click="btnMinimalizuj_Click">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="Obrazy/close.png"/>
+            </Button.OpacityMask>
+            <StackPanel>
+                <Image Source="Obrazy/minimize-window-xxl.png" Height="65">
+                    <Image.Effect>
+                        <DropShadowEffect/>
+                    </Image.Effect>
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="Obrazy/minimize-window-xxl.png"/>
+                    </Image.OpacityMask>
+                </Image>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

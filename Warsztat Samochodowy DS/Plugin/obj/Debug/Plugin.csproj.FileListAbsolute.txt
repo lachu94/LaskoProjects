@@ -1,0 +1,15 @@
+C:\Users\Rafał\Desktop\Warsztat Samochodowy DS\Plugin\bin\Debug\Plugin.dll
+C:\Users\Rafał\Desktop\Warsztat Samochodowy DS\Plugin\bin\Debug\Plugin.pdb
+C:\Users\Rafał\Desktop\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.csprojResolveAssemblyReference.cache
+C:\Users\Rafał\Desktop\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.dll
+C:\Users\Rafał\Desktop\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.pdb
+D:\Downloads\Warsztat Samochodowy DS\Plugin\bin\Debug\Plugin.dll
+D:\Downloads\Warsztat Samochodowy DS\Plugin\bin\Debug\Plugin.pdb
+D:\Downloads\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.csprojResolveAssemblyReference.cache
+D:\Downloads\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.dll
+D:\Downloads\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.pdb
+D:\Warsztat Samochodowy DS\Plugin\bin\Debug\Plugin.dll
+D:\Warsztat Samochodowy DS\Plugin\bin\Debug\Plugin.pdb
+D:\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.csprojResolveAssemblyReference.cache
+D:\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.dll
+D:\Warsztat Samochodowy DS\Plugin\obj\Debug\Plugin.pdb

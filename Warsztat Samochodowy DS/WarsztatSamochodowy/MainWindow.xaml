@@ -1,0 +1,78 @@
+﻿<Window x:Class="WarsztatSamochodowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarsztatSamochodowy"
+        mc:Ignorable="d"
+        Title="Logowanie" WindowState="Maximized" WindowStyle="None" >
+    <Grid RenderTransformOrigin="0.23,0.636" Margin="0,0,-2,0" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+       
+        <Label x:Name="lblLogin" Content="Login" HorizontalAlignment="Center" Height="55"  VerticalAlignment="Top" Width="106" FontSize="30" FontWeight="Bold" FontStyle="Italic" Margin="254,163,402,0"/>
+        <Label x:Name="lblHaslo" Content="Hasło" HorizontalAlignment="Center"  VerticalAlignment="Top" FontSize="30
+               " FontWeight="Bold" FontStyle="Italic" Margin="254,224,402,0" Width="106"/>
+        <TextBox x:Name="txtLogin" TabIndex="1" HorizontalAlignment="Center" Height="46" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Margin="365,163,227,0" FontSize="28" FontWeight="Bold"/>
+        <Button x:Name="button" TabIndex="3" HorizontalAlignment="Center" Margin="365,285,270,0" VerticalAlignment="Top" Width="127" Click="button_Click" Height="53" FontStretch="Condensed" Grid.Row="0" Grid.ZIndex="3">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.683"/>
+                    <GradientStop Color="#FF060002" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Obrazy/garage.png" Width="39" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="40"/>
+                <Label Content="Zaloguj" Width="81" HorizontalAlignment="Right" FontSize="16" FontFamily="Showcard Gothic"/>
+            </StackPanel>
+
+
+        </Button>
+        <PasswordBox x:Name="passwordBox" TabIndex="2" HorizontalAlignment="Center" Margin="365,224,227,0" VerticalAlignment="Top" Width="170" Height="46" FontSize="28"/>
+        <Label x:Name="label" Content="Witaj w warsztacie" HorizontalAlignment="Center" Height="55"  VerticalAlignment="Top" Width="474" FontSize="45" FontFamily="Stencil" Margin="0,25,0,0"/>
+
+        <Button x:Name="btnZamknij" HorizontalAlignment="Right" VerticalAlignment="Top" Width="77" Height="77" Click="btnZamknij_Click" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="Obrazy/close.png"/>
+            </Button.OpacityMask>
+            <StackPanel>
+                <Image Source="Obrazy/close.png">
+                    <Image.Effect>
+                        <DropShadowEffect/>
+                    </Image.Effect>
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="Obrazy/close.png"/>
+                    </Image.OpacityMask>
+                </Image>
+            </StackPanel>
+
+        </Button>
+        <Button x:Name="btnMinimalizuj" HorizontalAlignment="Right"  VerticalAlignment="Top" Width="77" Height="77" Margin="0,0,77,0" Click="btnMinimalizuj_Click">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="Obrazy/close.png"/>
+            </Button.OpacityMask>
+            <StackPanel>
+                <Image Source="Obrazy/minimize-window-xxl.png" Height="65">
+                    <Image.Effect>
+                        <DropShadowEffect/>
+                    </Image.Effect>
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="Obrazy/minimize-window-xxl.png"/>
+                    </Image.OpacityMask>
+                </Image>
+            </StackPanel>
+        </Button>
+
+        <Image x:Name="image1" HorizontalAlignment="Center" Height="422" Margin="155,0,144,0" VerticalAlignment="Bottom" Width="463" Source="Obrazy/pistons.png" Grid.Row="0" Grid.ZIndex="2"/>
+    </Grid>
+    
+</Window>
