@@ -126,8 +126,10 @@ namespace WarsztatSamochodowy
             System.Windows.MessageBox.Show(idU + Status + Opis + idP + idS);
 
             DaneParagonu paragon = new DaneParagonu();
-            MainMenu mm = new MainMenu();
-            mm.Show();
+            //   MainMenu mm = new MainMenu();
+            //  mm.Show();
+            OpisUsterki opis = new OpisUsterki();
+            opis.Show();
             paragon.Show();
         }
         private void StatusSelectionChanged(object sender, EventArgs e)

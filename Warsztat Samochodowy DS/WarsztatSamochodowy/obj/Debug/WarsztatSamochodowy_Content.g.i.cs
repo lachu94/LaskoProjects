@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obrazy/minimize-window-xxl.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obrazy/paragon.png")]
 
 

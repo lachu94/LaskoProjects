@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:WarsztatSamochodowy"
         xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         mc:Ignorable="d"
-        Title="ZobaczZlecenia" WindowState="Maximized"   WindowStyle="None" Height="809" >
+       Title="Lista Zleceń"  WindowState="Maximized" WindowStyle="None" Height="809" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
 
     <Grid>
-        <DataGrid  x:Name="dgOrders" Margin="0,10,0,87"  Width="Auto" AutoGenerateColumns="False">
+        <DataGrid  x:Name="dgOrders" Margin="86,10,88,187"  Width="Auto" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" IsReadOnly="True" Binding="{Binding id_Klienta}"/>
                 <DataGridTextColumn Header="Imie" IsReadOnly="True" Binding="{Binding Imie}"/>
@@ -58,9 +58,52 @@
 
 
         </DataGrid>
-        <Button x:Name="btnBack" Click="btnBack_Click" Content="Wróć" HorizontalAlignment="Left" Margin="346,732,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" />
-        <Button x:Name="btnParagon" Content="Paragon" HorizontalAlignment="Left" Margin="208,732,0,0" VerticalAlignment="Top" Width="75" Click="btnParagon_Click" RenderTransformOrigin="-0.16,0.45" />
-        <Button x:Name="btnOk" Content="Zatwierdź" HorizontalAlignment="Left" Margin="528,732,0,0" VerticalAlignment="Top" Width="75" Click="btnOk_Click"/>
+        <Button x:Name="btnBack" Click="btnBack_Click"  HorizontalAlignment="Center"  VerticalAlignment="Bottom" Width="230
+                " Height="61
+                " RenderTransformOrigin="0.5,0.5" Margin="530,0,0,29" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.683"/>
+                    <GradientStop Color="#FF060002" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Obrazy/logout.png" Width="50" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="60"/>
+                <Label Content="    Wyjście" Width="175" HorizontalAlignment="Right" FontSize="24" FontFamily="Tahoma" VerticalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnParagon"  HorizontalAlignment="Center"  VerticalAlignment="Bottom" Width="230" Height="61
+                " Click="btnParagon_Click" RenderTransformOrigin="-0.16,0.45" Margin="267,0,263,29" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.683"/>
+                    <GradientStop Color="#FF060002" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Obrazy/paragon.png" Width="50" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="60"/>
+                <Label Content="   Paragon" Width="175" HorizontalAlignment="Right" FontSize="24" FontFamily="Tahoma" VerticalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnOk" Height="61" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="230
+                " Click="btnOk_Click" Margin="0,0,530,29">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.683"/>
+                    <GradientStop Color="#FF060002" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Obrazy/ok.png" Width="50" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="60"/>
+                <Label Content="   Zatwierdź" Width="175" HorizontalAlignment="Right" FontSize="24" FontFamily="Tahoma" VerticalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+        </Button>
 
     </Grid>
 </Window>
