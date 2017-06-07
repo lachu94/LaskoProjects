@@ -42,7 +42,7 @@
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -92,6 +92,12 @@
     <Compile Include="Models\Samochody.cs" />
     <Compile Include="Models\Uslugi.cs" />
     <Compile Include="Models\Uzytkownicy.cs" />
+    <Compile Include="OpisUsterki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpisUsterki.Designer.cs">
+      <DependentUpon>OpisUsterki.cs</DependentUpon>
+    </Compile>
     <Compile Include="Wydruk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,10 @@
     <EmbeddedResource Include="DaneParagonu.resx">
       <DependentUpon>DaneParagonu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OpisUsterki.resx">
+      <DependentUpon>OpisUsterki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParagonWyglad.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -194,6 +204,9 @@
       <Project>{80f9eec0-45e3-4d0b-9d0e-00c13f8965b9}</Project>
       <Name>Plugin</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazy\paragon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

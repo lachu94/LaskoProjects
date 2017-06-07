@@ -7,25 +7,25 @@
         mc:Ignorable="d"
          Title="Formularz przyjęcia usługi"  WindowState="Maximized" WindowStyle="None" Height="809" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
     <Grid Height="779" VerticalAlignment="Top" HorizontalAlignment="Center" >
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="179" Margin="-2,9,-33,0" Stroke="Black" VerticalAlignment="Top" Width="707"/>
-        <Label Content="Dane klienta: " HorizontalAlignment="Left" Margin="48,9,0,0" VerticalAlignment="Top" Width="285" FontSize="28" FontWeight="Bold" FontStyle="Italic"/>
-        <Label Content="Imię:" HorizontalAlignment="Left" Margin="148,55,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
-        <Label Content="Nazwisko:" HorizontalAlignment="Left" Margin="148,97,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
-        <Label Content="Telefon:" HorizontalAlignment="Left" Margin="148,138,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
-        <TextBox x:Name="txtImie" HorizontalAlignment="Left" Height="31" Margin="258,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="1"/>
-        <TextBox x:Name="txtNazwisko" HorizontalAlignment="Left" Height="31" Margin="258,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="2"/>
-        <TextBox x:Name="txtTelefon" HorizontalAlignment="Left" Height="31" Margin="258,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="3"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="188" Margin="-2,203,-33,0" Stroke="Black" VerticalAlignment="Top" Width="707"/>
-        <Label Content="Dane pojazdu:" HorizontalAlignment="Left" Margin="47,203,0,0" VerticalAlignment="Top" FontSize="28" FontWeight="Bold" FontStyle="Italic"/>
-        <Label Content="Marka:" HorizontalAlignment="Left" Margin="153,255,0,0" VerticalAlignment="Top"  FontSize="20" FontWeight="Bold"/>
-        <Label Content="Rodzaj paliwa:" HorizontalAlignment="Left" Margin="153,341,0,0" VerticalAlignment="Top"  FontSize="20" FontWeight="Bold"/>
-        <Label Content="Model:" HorizontalAlignment="Left" Margin="153,297,0,0" VerticalAlignment="Top"  FontSize="20" FontWeight="Bold"/>
-        <TextBox x:Name="txtModel" HorizontalAlignment="Left" Height="31" Margin="258,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="5"/>
-        <TextBox x:Name="txtMarka" HorizontalAlignment="Left" Height="30" Margin="258,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="4"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="237" Margin="-2,405,-33,0" Stroke="Black" VerticalAlignment="Top" Width="707"/>
-        <Label Content="Opis usterek lub zadań do wykonania:" HorizontalAlignment="Left" Margin="48,405,0,0" VerticalAlignment="Top" FontSize="28" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBox x:Name="txtOpisUsterki" HorizontalAlignment="Left" Height="168" Margin="57,457,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="590" FontSize="18" TabIndex="7"/>
-        <Button x:Name="btnZatwierdz" HorizontalAlignment="Left" Height="61" Margin="0,0,0,24" VerticalAlignment="Bottom" Width="299" Click="btnZatwierdz_Click" TabIndex="8">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="179" Margin="-10,45,-25,0" Stroke="Black" VerticalAlignment="Top" Width="707"/>
+        <Label Content="Dane klienta: " HorizontalAlignment="Left" Margin="40,45,0,0" VerticalAlignment="Top" Width="285" FontSize="28" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Imię:" HorizontalAlignment="Left" Margin="140,91,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Nazwisko:" HorizontalAlignment="Left" Margin="140,133,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Telefon:" HorizontalAlignment="Left" Margin="140,174,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txtImie" HorizontalAlignment="Left" Height="31" Margin="250,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="1"/>
+        <TextBox x:Name="txtNazwisko" HorizontalAlignment="Left" Height="31" Margin="250,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="2"/>
+        <TextBox x:Name="txtTelefon" HorizontalAlignment="Left" Height="31" Margin="250,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="3"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="188" Margin="-10,255,-25,0" Stroke="Black" VerticalAlignment="Top" Width="707"/>
+        <Label Content="Dane pojazdu:" HorizontalAlignment="Left" Margin="39,255,0,0" VerticalAlignment="Top" FontSize="28" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Marka:" HorizontalAlignment="Left" Margin="145,307,0,0" VerticalAlignment="Top"  FontSize="20" FontWeight="Bold"/>
+        <Label Content="Rodzaj paliwa:" HorizontalAlignment="Left" Margin="145,393,0,0" VerticalAlignment="Top"  FontSize="20" FontWeight="Bold"/>
+        <Label Content="Model:" HorizontalAlignment="Left" Margin="145,349,0,0" VerticalAlignment="Top"  FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txtModel" HorizontalAlignment="Left" Height="31" Margin="250,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="5"/>
+        <TextBox x:Name="txtMarka" HorizontalAlignment="Left" Height="30" Margin="250,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="18" TabIndex="4"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="253" Margin="-10,468,-25,0" Stroke="Black" VerticalAlignment="Top" Width="707"/>
+        <Label Content="Opis usterek lub zadań do wykonania:" HorizontalAlignment="Left" Margin="31,468,0,0" VerticalAlignment="Top" FontSize="28" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="txtOpisUsterki" HorizontalAlignment="Left" Height="184" Margin="40,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="590" FontSize="18" TabIndex="7"/>
+        <Button x:Name="btnZatwierdz" HorizontalAlignment="Left" Height="61" VerticalAlignment="Bottom" Width="299" Click="btnZatwierdz_Click" TabIndex="8" Margin="-10,0,0,-32">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -39,7 +39,7 @@
                 <Label Content="   Zatwierdź" Width="175" HorizontalAlignment="Right" FontSize="24" FontFamily="Tahoma" VerticalAlignment="Center" FontWeight="Bold"/>
             </StackPanel>
         </Button>
-        <Button  HorizontalAlignment="Left" Height="61" Margin="406,0,-33,24" VerticalAlignment="Bottom" Width="299" Click="Button_Click" TabIndex="9">
+        <Button  HorizontalAlignment="Left" Height="61" Margin="396,0,-23,-32" VerticalAlignment="Bottom" Width="299" Click="Button_Click" TabIndex="9">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -53,10 +53,10 @@
                 <Label Content="    Wyjście" Width="175" HorizontalAlignment="Right" FontSize="24" FontFamily="Tahoma" VerticalAlignment="Center" FontWeight="Bold"/>
             </StackPanel>
         </Button>
-        <ComboBox x:Name="cboxTypSilnika" HorizontalAlignment="Left" Margin="304,341,0,0" VerticalAlignment="Top" Width="133" Height="37" TabIndex="6">
-            <ComboBoxItem VerticalAlignment="Center">Diesel</ComboBoxItem>
-            <ComboBoxItem>Benzyna</ComboBoxItem>
-            <ComboBoxItem>Benzyna + LPG</ComboBoxItem>
+        <ComboBox x:Name="cboxTypSilnika" HorizontalAlignment="Left" Margin="296,393,0,0" VerticalAlignment="Top" Width="133" Height="37" TabIndex="6" FontWeight="Bold">
+            <ComboBoxItem VerticalAlignment="Center" HorizontalAlignment="Left">Diesel</ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Left" VerticalAlignment="Center">Benzyna</ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Left" VerticalAlignment="Center">Benzyna + LPG</ComboBoxItem>
 
         </ComboBox>
     </Grid>

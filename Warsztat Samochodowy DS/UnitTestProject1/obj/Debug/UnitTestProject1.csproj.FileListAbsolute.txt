@@ -50,3 +50,4 @@ D:\Warsztat Samochodowy DS\UnitTestProject1\bin\Debug\Newtonsoft.Json.xml
 D:\Warsztat Samochodowy DS\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
 D:\Warsztat Samochodowy DS\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 D:\Warsztat Samochodowy DS\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+D:\WorkshopProject\Warsztat Samochodowy DS\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache

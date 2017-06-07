@@ -1,4 +1,0 @@
-Opis formatki wyświetlającej zadania dla pracownika.
-Po zalogowaniu się przez pracownika będzie on miał możliwość z listy wybrania samochodu przy którym mają zostać przeprowadzone naprawy
-Po kliknięciu na dany pojazd pojawi się opis zadań jakie musi wykonać pracownik oraz po wykonaniu tych czyności zaznaczyć radio buttonem,
-że prace zostały zakończone co odnotowane będzie w bazie danych aby administrator po weryfikacji mógł to następnie usunąć. 

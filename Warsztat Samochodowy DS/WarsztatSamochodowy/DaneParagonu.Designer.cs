@@ -41,12 +41,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNazwa = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.paragonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazwaProduktuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iloscDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paragonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paragonBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -174,10 +174,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(545, 252);
             this.dataGridView1.TabIndex = 16;
             // 
-            // paragonBindingSource
-            // 
-            this.paragonBindingSource.DataSource = typeof(WarsztatSamochodowy.Models.Paragon);
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -213,12 +209,16 @@
             this.razemDataGridViewTextBoxColumn.Name = "razemDataGridViewTextBoxColumn";
             this.razemDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // paragonBindingSource
+            // 
+            this.paragonBindingSource.DataSource = typeof(WarsztatSamochodowy.Models.Paragon);
+            // 
             // DaneParagonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(568, 399);
+            this.ClientSize = new System.Drawing.Size(569, 397);
             this.Controls.Add(this.btbDrukuj);
             this.Controls.Add(this.btnUsun);
             this.Controls.Add(this.btnDodaj);
@@ -230,7 +230,7 @@
             this.Controls.Add(this.txtNazwa);
             this.Controls.Add(this.dataGridView1);
             this.Name = "DaneParagonu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Paragon";
             this.Load += new System.EventHandler(this.DaneParagonu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
